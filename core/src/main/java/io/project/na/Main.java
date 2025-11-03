@@ -243,7 +243,7 @@ public class Main extends ApplicationAdapter {
         }
 
         // 게임오버 SPACE로 재시작
-        if(state == GameState.GAMEOVER) {
+        if(state == GameState.GAMEOVER || state == GameState.CLEAR) {
             if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) restartGame();
             return;
         }
